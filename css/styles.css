@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Livvic", "Arial", sans-serif;
+}
+
+
+
+h1 {
+  font-weight: bold;
+}
+
+.header-nav {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-link img {
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+
+}
+
+.logo-link {
+  transition: 0.5s ease opacity,
+    0.5s ease transform;
+}
+
+.logo-link:hover {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.social-link {
+  display: block;
+  padding: 5px;
+}
+
+.social-link img {
+  display: block;
+  width: 15px;
+  height: 15px;
+  transition: 0.5s ease opacity,
+    0.5s ease transform;
+}
+
+.social-link img:hover {
+  opacity: 0.7;
+  transform: rotate(10deg);
+}
+
+.phone-link {
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s ease color,
+    0.5s ease transform;
+}
+
+.phone-link:hover {
+  color: #03A9F5;
+  transform: scale(1.2);
+}
