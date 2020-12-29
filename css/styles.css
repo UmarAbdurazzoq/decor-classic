@@ -14,6 +14,10 @@ body {
   font-family: "Livvic", "Arial", sans-serif;
 }
 
+.header{
+  background-color: #4B2F48;
+  box-shadow: 0px 3px 15px black;
+}
 
 
 h1 {
@@ -22,6 +26,7 @@ h1 {
 
 .header-nav {
   padding-top: 15px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,12 +39,12 @@ h1 {
   object-fit: cover;
 
 }
-
+.logo,
 .logo-link {
   transition: 0.5s ease opacity,
     0.5s ease transform;
 }
-
+.logo:hover,
 .logo-link:hover {
   opacity: 0.7;
   transform: scale(1.2);
@@ -60,8 +65,8 @@ h1 {
 
 .social-link img {
   display: block;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   transition: 0.5s ease opacity,
     0.5s ease transform;
 }
@@ -75,12 +80,68 @@ h1 {
   font-size: 13px;
   text-align: center;
   text-decoration: none;
-  color: black;
-  transition: 0.5s ease color,
-    0.5s ease transform;
+  color: white;
+  transition: 0.3s ease color,
+    0.3s ease transform;
 }
 
 .phone-link:hover {
   color: #03A9F5;
   transform: scale(1.2);
+  text-decoration: none;
+}
+
+.tovar{
+  margin-bottom: 15px;
+}
+
+.footer{
+  background-color: #4B2F48;
+  box-shadow: 0px -3px 15px black;
+
+}
+
+.footer .social-link img {
+  display: block;
+  width: 25px;
+  height: 25px;
+  transition: 0.5s ease opacity,
+    0.5s ease transform;
+}
+
+.footer .social-link {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+}
+.footer-nav {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+
+
+@media only screen and  (max-width: 768px){
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ 
+  .footer .phone-link {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  .footer .logo-wrapper {
+   order: 3;
+  }
+  
 }
