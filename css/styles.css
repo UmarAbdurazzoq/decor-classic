@@ -152,7 +152,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
   }
-
+  
   .footer .phone-link {
     display: block;
     text-align: center;
@@ -160,13 +160,16 @@ h1 {
     margin-bottom: 5px;
     font-size: 20px;
   }
-
+  
   .footer .logo-wrapper {
     order: 3;
   }
-
+  
   .backpic{
-    display: none;
+    height: 30vh;
+    background-image: url('../img/wallpapermini.jpg');
+    background-position: center center;
+    background-size: cover;
   }
 
 }
