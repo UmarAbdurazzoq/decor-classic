@@ -145,8 +145,13 @@ h1 {
   background-attachment: fixed;
 }
 
+.pic{
+  object-fit: cover;
+  width: 50%;
+}
 
 @media only screen and (max-width: 768px) {
+ 
   .footer-nav {
     display: flex;
     flex-direction: column;
@@ -166,32 +171,35 @@ h1 {
   }
   
   .backpic{
-    height: 30vh;
     background-position: center center;
   }
-
+  
 }
 
 
 @media only screen and (max-width: 395px) {
-
+  
   .logo-link img {
     width: 75px;
     height: 35px;
     object-fit: cover;
-
+    
   }
-
+  
   .phone-link {
     font-size: 13px;
   }
-
+  
   .social-link img {
     display: block;
     width: 15px;
     height: 15px;
     transition: 0.5s ease opacity,
-      0.5s ease transform;
+    0.5s ease transform;
   }
-
+  
+  .backpic{
+    height: 35vh;
+  }
+  
 }
