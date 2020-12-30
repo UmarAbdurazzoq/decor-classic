@@ -167,9 +167,7 @@ h1 {
   
   .backpic{
     height: 30vh;
-    background-image: url('../img/wallpapermini.jpg');
     background-position: center center;
-    background-size: cover;
   }
 
 }
