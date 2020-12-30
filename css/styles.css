@@ -171,7 +171,7 @@ h1 {
   }
   
   .backpic{
-    background-position: center center;
+    display: none;
   }
   
 }
@@ -197,9 +197,5 @@ h1 {
     transition: 0.5s ease opacity,
     0.5s ease transform;
   }
-  
-  .backpic{
-    height: 35vh;
-  }
-  
+   
 }
