@@ -150,6 +150,48 @@ h1 {
   width: 50%;
 }
 
+.call-me{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #44bd32;
+  bottom: 30px;
+  right: 30px;
+}
+
+
+.call-me::after{
+  position: absolute;
+  border-radius: 50%;
+  display: block;
+  content: '';
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border: 2px solid #44bd32;
+  animation: pulse 1.5s linear infinite;
+}
+.call-me::before{
+  position: absolute;
+  border-radius: 50%;
+  display: block;
+  content: '';
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border: 2px solid #45bd32;
+  animation: pulse 1.5s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes pulse {
+  0%{ transform: scale(0.5); opacity: 0;}
+  50%{ transform: scale(1); opacity: 1;}
+  100%{ transform: scale(1.4); opacity: 0;}
+}
+
 @media only screen and (max-width: 768px) {
  
   .footer-nav {
@@ -173,7 +215,8 @@ h1 {
   .backpic{
     display: none;
   }
-  
+ 
+ 
 }
 
 
@@ -185,7 +228,15 @@ h1 {
     object-fit: cover;
     
   }
-  
+  .call-me{
+    width: 35px;
+    height: 35px;
+    bottom: 10px;
+    right: 10px;
+  }
+  .call-me img{
+    width: 20px;
+  }
   .phone-link {
     font-size: 13px;
   }
@@ -197,5 +248,9 @@ h1 {
     transition: 0.5s ease opacity,
     0.5s ease transform;
   }
+
+  
+  
    
 }
+
